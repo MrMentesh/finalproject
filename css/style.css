@@ -146,7 +146,7 @@ ul{
 }
 
 .section2_div{
-    width: 85%;
+    width: 1160px;
     margin: 0 auto;
     margin-top: 40px;
 }
@@ -183,14 +183,56 @@ ul{
 }
 
 .section3{
+    width: 1160px;
+    margin: 0 auto;
     margin-top: 40px;
-    width: 85%;
 }
 .section3_h{
     font-size: 24px;
     font-weight: bold;
+    margin-bottom: 40px;
 }
 
-.section3_div{
-    
+.section3_div1{
+    display: flex;
 }
+
+.section3_left_div{
+    width: 760px;
+}
+
+.section3_leftpic1{
+    width: 760px;
+    height: 430px;
+    background-image: url(../image/sec3pic1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section3_leftpic2{
+    width: 760px;
+    height: 430px;
+    margin-top: 40px;
+    background-image: url(../image/sec3pic2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section3_right_div{
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section3_card{
+    height: 274px;
+    margin-bottom: 38px;
+}
+
+.section3_right_p{
+    margin-top: 48px;
+    font-weight: bold;
+}
+
