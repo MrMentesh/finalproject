@@ -3,6 +3,7 @@
     width: 100%;
     margin: 0 auto;
     background-color: rgb(245, 245, 245);
+    
 }
 
 header{
@@ -85,6 +86,8 @@ ul{
     width: 135px;
     height: 40px;
     margin-top: 30px;
+    font-size: 11px;
+    font-weight: bold;
     color: white;
     background-color: rgb(250, 105, 128);
     border: none;
@@ -333,5 +336,125 @@ i{
     color: white;
 }
 
+/* contact page */
 
+.contact_section1{
+    width: 1160px;
+    margin: 0 auto;
+    margin-top: 103px;
+    display: flex;
+}
 
+.contact_section1_photo{
+    width: 580px;
+    height: 500px;
+    background-image: url(../image/contactphoto1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.contact_section1_h{
+    font-size: 30px;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.contact_section1_search{
+    width: 580px;
+    height: 500px;
+    background-color: white;
+    position: relative;
+}
+
+.contact_section1_info{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+label{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+input{
+    width: 360px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    border: 2px solid rgb(210, 210, 210);
+    border-radius: 7px;
+}
+
+.search_button{
+    width: 135px;
+    height: 40px;
+    font-size: 11px;
+    color: white;
+    border: none;
+    background-color: #fa6980;
+}
+
+.contact_section2{
+    width: 1160px;
+    height: 255px;
+    margin: 0 auto;
+    margin-top: 35px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-top: 2px solid rgb(210, 210, 210);;
+    border-bottom: 2px solid rgb(210, 210, 210);;
+}
+
+.contact_section2_div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact_section2_h_div{
+    width: 360px;
+    margin-top: 20px;
+}
+
+.contact_section2_h{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.contact_section2_text_div{
+    width: 360px;
+}
+
+.contact_section2_text{
+    font-size: 14px;
+    color: rgb(170, 175, 180);
+}
+
+.contact_section3{
+    width: 1160px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.contact_photo2{
+    width: 100%;
+    height: 500px;
+}
+
+.contact_section3_p_div{
+    width: 1160px;
+    margin-top: 80px;
+    border-bottom: 2px solid rgb(170, 175, 180);
+}
+
+.contact_section3_p{
+    font-size: 14px;
+    color: rgb(170, 175, 180);
+    margin-bottom: 44px;
+}
