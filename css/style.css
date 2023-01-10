@@ -2,17 +2,46 @@
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
-    background-color: rgb(245, 245, 245);
-    
+    background-color:  rgb(245, 245, 245);
+    font-family:'Poppins';
 }
 
 header{
     width: 100%;
+    height: 51px;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    background-color:rgb(245, 245, 245);
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+
+.LOGO{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(250, 105, 130);
+    animation-name: LOGO;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes LOGO{
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.3;
+    }
+    from {
+        font-size: 20px;
+    }
+    to {
+        font-size: 16px;
+    }
 }
 
 ul{
@@ -26,10 +55,13 @@ ul{
     color: rgb(175, 175, 175);
 }
 
-.active{
-    color: rgb(0, 0, 0);
-    padding-bottom: 5px;
-    border-bottom: 3px solid red;
+.header_li:hover{
+    border-bottom: 2px solid red;
+    cursor: pointer;
+}
+
+.header_li .active{
+    color: black;
 }
 
 .section1{
@@ -42,7 +74,7 @@ ul{
 .section_left{
     width: 840px;
     height: 600px;
-    background-image: url(../image/image\ 1.png);
+    background-image: url(../image/sec1pic1.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -94,6 +126,10 @@ ul{
     border-radius: 5px;
 }
 
+.section_left_button:hover{
+    cursor: pointer;
+}
+
 .section_right{
     width: 600px;
     height: 600px;
@@ -114,7 +150,7 @@ ul{
     font-size: 24px;
     font-weight: bold;
     padding-bottom: 40px;
-    border-bottom: 1px solid rgb(166, 173, 180);
+    border-bottom: 1px solid rgb(170, 175, 180);
 }
 
 .section_right_h2{
@@ -172,6 +208,9 @@ ul{
     background-color: white;
 }
 
+.card:hover{
+    box-shadow: 5px 5px rgb(200, 200, 200);
+}
 
 .card_h{
     margin: 40px 40px 10px 40px;
@@ -190,6 +229,7 @@ ul{
     margin: 0 auto;
     margin-top: 40px;
 }
+
 .section3_h{
     font-size: 24px;
     font-weight: bold;
@@ -227,12 +267,10 @@ ul{
 
 .pic_text1{
     position: absolute;
-    
 }
 
 .pic_text2{
     position: absolute;
-    
 }
 
 .section3_leftpic1_h1{
@@ -255,6 +293,7 @@ ul{
     color: white;
     margin-left: 40px;
     margin-bottom: 66px;
+    margin-right: 5px;
 }
 
 .section3_leftpic2_h1{
@@ -277,6 +316,7 @@ ul{
     color: white;
     margin-left: 40px;
     margin-bottom: 66px;
+    margin-right: 5px;
 }
 
 .section3_right_div{
@@ -299,7 +339,7 @@ footer{
     width: 100%;
     height: 200px;
     margin-top: 100px;
-    padding: 58px 140px 63px 145px;
+    padding: 58px 139px 63px 145px;
     display: flex;
     background-color: rgb(170, 175, 180);
 }
@@ -308,11 +348,18 @@ footer{
     display: inline-block;
 }
 
+.LOGO2{
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+}
+
 .footer_div2{
     width: 25%;
     margin-left: 63px;
     display: flex;
     justify-content: space-between;
+    gap: 40px;
 }
 
 .footer_mid_div{
@@ -327,28 +374,30 @@ footer{
 }
 
 .footer_div3{
-    margin-left: 650px;
     display: flex;
-    gap: 35px;
+    margin-left: 620px;
+    gap: 32px;
 }
 
 i{
     color: white;
 }
 
+
 /* contact page */
+
+
 
 .contact_section1{
     width: 1160px;
     margin: 0 auto;
-    margin-top: 103px;
     display: flex;
 }
 
 .contact_section1_photo{
     width: 580px;
     height: 500px;
-    background-image: url(../image/contactphoto1.png);
+    background-image: url(../image/contactpic1.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -401,6 +450,10 @@ input{
     background-color: #fa6980;
 }
 
+.search_button:hover{
+    cursor: pointer;
+}
+
 .contact_section2{
     width: 1160px;
     height: 255px;
@@ -415,6 +468,19 @@ input{
 .contact_section2_div{
     display: flex;
     justify-content: space-between;
+}
+
+.contact_avatar{
+    animation: avatar 3s linear infinite;
+}
+
+@keyframes avatar{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
 
 .contact_section2_h_div{
@@ -433,6 +499,7 @@ input{
 
 .contact_section2_text{
     font-size: 14px;
+    line-height: 20px;
     color: rgb(170, 175, 180);
 }
 
@@ -457,8 +524,9 @@ input{
     font-size: 14px;
     color: rgb(170, 175, 180);
     margin-bottom: 44px;
+    line-height: 26px;
 }
 
-p{
-    font-family: 'Poppins';
+
+@media screen and (max-width: 768px) {
 }
