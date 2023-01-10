@@ -458,3 +458,7 @@ input{
     color: rgb(170, 175, 180);
     margin-bottom: 44px;
 }
+
+p{
+    font-family: 'Poppins';
+}
