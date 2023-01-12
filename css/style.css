@@ -56,7 +56,7 @@ ul{
 }
 
 .header_li:hover{
-    border-bottom: 2px solid red;
+    border-bottom: 1px solid red;
     cursor: pointer;
 }
 
@@ -128,6 +128,7 @@ ul{
 
 .section_left_button:hover{
     cursor: pointer;
+    background-color:rgb(200, 50, 75);
 }
 
 .section_right{
@@ -202,13 +203,14 @@ ul{
 
 }
 
-.card{
+.card1, .card2, .card3{
     width: 360px;
     border-radius: 7px;
     background-color: white;
 }
 
-.card:hover{
+.card1:hover, .card2:hover, .card3:hover{
+    filter: grayscale(70%);
     box-shadow: 5px 5px rgb(200, 200, 200);
 }
 
@@ -528,5 +530,74 @@ input{
 }
 
 
+
 @media screen and (max-width: 768px) {
+
+    .container{
+        width: 100%;
+        color:  rgb(245, 245, 245);
+    }
+
+    header{
+        width: 768px;
+    }
+
+    .section1{
+        width: 100%;
+        height: 742px;
+        margin-top: 50px;
+        flex-direction: column;
+    }
+    .section_left{
+        width: 100%;
+        height: 399px;
+    }
+
+    .section_right_h1{
+        color: black;
+    }
+
+    .section_right_h3{
+        color: black;
+    }
+
+    .section2{
+        width: 80%;
+        height: 412px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+     
+    .section2_h1{
+        color: black;
+    }
+    
+    .cardpic{
+        width: 284px;
+        height: 180px;
+    }
+ 
+    .card1, .card2{
+        width: 284px;
+    }
+
+    .card3{
+    display: none;
+    }
+
+    .card_h{
+        color: black;
+    }
+
+    .
+
+
+
+
+
+
+
 }
+
+
